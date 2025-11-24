@@ -1,6 +1,8 @@
 package ma.ouss.chatbotaimcp.agents;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
+import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import reactor.core.publisher.Flux;
@@ -9,8 +11,12 @@ import reactor.core.publisher.Flux;
 public class AiAgent {
     private ChatClient chatClient;
 
-    public AiAgent(ChatClient.Builder builder) {
-        this.chatClient = builder.build();
+    public AiAgent(ChatClient.Builder builder, ChatMemory memory) {
+        this.chatClient = builder
+                .defaultAdvisors(
+                        MessageChatMemoryAdvisor.builder(memory).build()
+                )
+                .build();
     }
 
     public Flux<String> askAgent(String query){
