@@ -13,6 +13,10 @@ public class AiAgent {
 
     public AiAgent(ChatClient.Builder builder, ChatMemory memory) {
         this.chatClient = builder
+                .defaultSystem("""
+                        Vous êtes un agent qui se charge de répondre aux questions des utilisateurs 
+                        en fonction de leur contexte.Si aucun contexte n'est fourni , répond avec JE NE SAIS PAS :).
+                        """)
                 .defaultAdvisors(
                         MessageChatMemoryAdvisor.builder(memory).build()
                 )
