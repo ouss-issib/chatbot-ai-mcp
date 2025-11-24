@@ -1,5 +1,6 @@
 package ma.ouss.chatbotaimcp.agents;
 
+import ma.ouss.chatbotaimcp.tools.AITools;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
@@ -11,7 +12,7 @@ import reactor.core.publisher.Flux;
 public class AiAgent {
     private ChatClient chatClient;
 
-    public AiAgent(ChatClient.Builder builder, ChatMemory memory) {
+    public AiAgent(ChatClient.Builder builder, ChatMemory memory, AITools tools) {
         this.chatClient = builder
                 .defaultSystem("""
                         Vous êtes un agent qui se charge de répondre aux questions des utilisateurs 
@@ -20,6 +21,7 @@ public class AiAgent {
                 .defaultAdvisors(
                         MessageChatMemoryAdvisor.builder(memory).build()
                 )
+                .defaultTools(tools)
                 .build();
     }
 
