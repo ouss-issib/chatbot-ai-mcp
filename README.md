@@ -26,13 +26,13 @@ Le chatbot expose plusieurs capacités via MCP Tools :
 
 ### 📸 Exemples – Tools et requêtes
 
-| GET Employee Tool | List Employees Tool | Streaming |
+| GET Employee Tool | List Employees Tool | 
 |---|---|---|
-| ![](./captures/getListEmployeeTool.png) | ![](./captures/mcp_server_listEmployees.png) | ![](./captures/streaming.png) |
+| ![](./captures/getListEmployeeTool.png) | ![](./captures/mcp_server_listEmployees.png) |
 
-| Synchrone | Telegram Bot |
+| Synchrone |Streaming |
 |---|---|
-| ![](./captures/sychnrone.png) | ![](./captures/telegramBot.png) |
+| ![](./captures/sychnrone.png) | ![](./captures/streaming.png) |
 
 ---
 
