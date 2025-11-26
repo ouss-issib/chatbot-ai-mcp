@@ -17,7 +17,7 @@ public class ChatController {
 
     //@RequestParam String query Optional
     @GetMapping(value = "/chat",produces = MediaType.TEXT_PLAIN_VALUE)
-    public Flux<String> chat(String query){
+    public String chat(String query){
         return aiAgent.askAgent(query);
     }
 }
