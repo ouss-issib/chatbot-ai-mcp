@@ -68,27 +68,9 @@ Le chatbot communique avec Telegram via :
 
 ### 📸 Capture Telegram
 
-![](./captures/telegramBot.png)
-
----
-
-# 🏗️ 4. Intégration dans l’Architecture Micro-services (AP N°1)
-
-Le chatbot interagit avec les micro-services :
-
-- **customer-service**  
-- **inventory-service**  
-- **billing-service**
-
-Grâce aux Tools MCP, le chatbot peut :
-
-- Lister les employés  
-- Récupérer une facture  
-- Générer une réponse enrichie automatiquement
-
-### 📸 Exemple Bill Tool
-
-![](./captures/billFrom.png)
+| Telegram Bot | Bill From |Typing Action | rag |
+|---|---|---|---|
+| ![](./captures/telegramBot.png) | ![](./captures/billFrom.png) | ![](./captures/typingAction.png) | ![](./captures/rag.png) |
 
 ---
 
