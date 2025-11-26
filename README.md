@@ -27,7 +27,7 @@ Le chatbot expose plusieurs capacités via MCP Tools :
 ### 📸 Exemples – Tools et requêtes
 
 | GET Employee Tool | List Employees Tool | 
-|---|---|---|
+|---|---|
 | ![](./captures/getListEmployeeTool.png) | ![](./captures/mcp_server_listEmployees.png) |
 
 | Synchrone |Streaming |
