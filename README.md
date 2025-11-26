@@ -30,9 +30,9 @@ Le chatbot expose plusieurs capacités via MCP Tools :
 |---|---|---|
 | ![](./captures/getListEmployeeTool.png) | ![](./captures/mcp_server_listEmployees.png) | ![](./captures/streaming.png) |
 
-| Synchrone | Typing Action | Telegram Bot |
-|---|---|---|
-| ![](./captures/sychnrone.png) | ![](./captures/typingAction.png) | ![](./captures/telegramBot.png) |
+| Synchrone | Telegram Bot |
+|---|---|
+| ![](./captures/sychnrone.png) | ![](./captures/telegramBot.png) |
 
 ---
 
